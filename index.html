@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>药房网商城-安全的网上药店,有保障的网上药店,网上买药,网上购药网站</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+
+  </head>
+  <body>
+    <div class="page-group">
+       
+        <div class="page page-current" id='router'>
+          <header class="bar bar-nav">
+            <h1 class='title'>侧栏</h1>
+          </header>
+          <div class="content">
+            <div class="searchbar">
+              <div class="search-input">
+                <label class="icon icon-search" for="search"></label>
+                <input type="search" id='search' placeholder='输入关键字...'/>
+              </div>
+            </div>
+
+            <div class="searchbar row">
+              <div class="search-input col-80">
+                <label class="icon icon-search" for="search"></label>
+                <input type="search" id='search' placeholder='输入关键字...'/>
+              </div>
+              <a class="button button-fill button-primary col-20">搜索</a>
+            </div>
+
+            <div class="searchbar row">
+              <div class="search-input col-85">
+                <input type="search" id='search' placeholder='输入关键字...'/>
+              </div>
+              <a class="button button-fill button-primary col-15"><span class="icon icon-search"></span></a>
+            </div>
+            <div class="content-block">
+              <p><a href="#page1" class="button button-fill" d>打开左侧栏</a></p>
+            </div>
+
+          </div>
+        </div>
+        <div class="page" id="page1">
+        <header class="bar bar-nav">
+          <a class="button button-link button-nav pull-left back" href="/docs-demos/router">
+      <span class="icon icon-left"></span>
+      返回
+    </a>
+          <h1 class='title'>表单</h1>
+        </header>
+        <div class="content">
+          <div class="list-block">
+            <ul>
+              <!-- Text inputs -->
+              <li>
+                <div class="item-content">
+                  <div class="item-media"><i class="icon icon-form-name"></i></div>
+                  <div class="item-inner">
+                    <div class="item-title label">姓名</div>
+                    <div class="item-input">
+                      <input type="text" placeholder="Your name">
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item-content">
+                  <div class="item-media"><i class="icon icon-form-email"></i></div>
+                  <div class="item-inner">
+                    <div class="item-title label">邮箱</div>
+                    <div class="item-input">
+                      <input type="email" placeholder="E-mail">
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item-content">
+                  <div class="item-media"><i class="icon icon-form-password"></i></div>
+                  <div class="item-inner">
+                    <div class="item-title label">密码</div>
+                    <div class="item-input">
+                      <input type="password" placeholder="Password" class="">
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item-content">
+                  <div class="item-media"><i class="icon icon-form-gender"></i></div>
+                  <div class="item-inner">
+                    <div class="item-title label">性别</div>
+                    <div class="item-input">
+                      <select>
+                        <option>Male</option>
+                        <option>Female</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- Date -->
+              <li>
+                <div class="item-content">
+                  <div class="item-media"><i class="icon icon-form-calendar"></i></div>
+                  <div class="item-inner">
+                    <div class="item-title label">生日</div>
+                    <div class="item-input">
+                      <input type="date" placeholder="Birth day" value="2014-04-30">
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- Switch (Checkbox) -->
+              <li>
+                <div class="item-content">
+                  <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                  <div class="item-inner">
+                    <div class="item-title label">开关</div>
+                    <div class="item-input">
+                      <label class="label-switch">
+                        <input type="checkbox">
+                        <div class="checkbox"></div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="align-top">
+                <div class="item-content">
+                  <div class="item-media"><i class="icon icon-form-comment"></i></div>
+                  <div class="item-inner">
+                    <div class="item-title label">文本域</div>
+                    <div class="item-input">
+                      <textarea></textarea>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="content-block">
+            <div class="row">
+              <div class="col-50"><a href="#" class="button button-big button-fill button-danger">取消</a></div>
+              <div class="col-50"><a href="#" class="button button-big button-fill button-success">提交</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="panel-overlay"></div>
+        <!-- Left Panel with Reveal effect -->
+        <div class="panel panel-left panel-reveal theme-dark">
+          <div class="content-block">
+            <p>这是一个侧栏</p>
+            <p>你可以在这里放用户设置页面</p>
+            <p><a href="#" class="close-panel">关闭</a></p>
+          </div>
+          <div class="list-block">
+            <!-- .... -->
+          </div>
+        </div>
+        <div class="panel panel-right panel-reveal"  id='panel-left-demo'>
+          <div class="content-block">
+            <p>这是一个侧栏</p>
+            <!-- Click on link with "close-panel" class will close panel -->
+            <p><a href="#" class="close-panel">关闭</a></p>
+          </div>
+        </div></div>
+    </div>
+
+    <script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.js' charset='utf-8'></script>
+       <script>
+     //打开自动初始化页面的功能
+     //建议不要打开自动初始化，而是自己调用 $.init 方法完成初始化
+     $.config = {
+       swipePanel: "left"
+     }
+   </script>
+    <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.js' charset='utf-8'></script>
+    <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.js' charset='utf-8'></script>
+    <script>$.init();console.log($.device);</script>
+
+  </body>
+</html>
