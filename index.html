@@ -1,191 +1,42 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>药房网商城-安全的网上药店,有保障的网上药店,网上买药,网上购药网站</title>
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-    <link rel="shortcut icon" href="/favicon.ico">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+---
+layout: home
+title: SUI Mobile
+---
 
-    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
-    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+<div class="docs-header">
+  {% include masthead.html %}
+  <div class="docs-header-content">
+    <p class="docs-subtitle">轻量，小巧且精美的UI库<br />方便迅速搭建手机H5应用</p>
+    <a data-ignore="push" href="https://github.com/sdc-alibaba/SUI-Mobile" class="btn btn-primary" onClick="">访问Github</a>
+    <p class="version">V{{ site.version }}</p>
+  </div>
+</div>
 
-  </head>
-  <body>
-    <div class="page-group">
-       asasa
-        <div class="page page-current" id='router'>
-          <header class="bar bar-nav">
-            <h1 class='title'>侧栏</h1>
-          </header>
-          <div class="content">
-            <div class="searchbar">
-              <div class="search-input">
-                <label class="icon icon-search" for="search"></label>
-                <input type="search" id='search' placeholder='输入关键字...'/>
-              </div>
-            </div>
+<div class="index-content docs-content">
+  <h2>SUI Mobile</h2>
+  <p>SUI Mobile 是一套基于 <a href='http://framework7.taobao.org/' target="_blank">Framework7</a> 开发的UI库。它非常轻量、精美，只需要引入我们的CDN文件就可以使用，并且能兼容到 iOS 6.0+ 和 Android 4.0+，非常适合开发跨平台Web App。</p>
 
-            <div class="searchbar row">
-              <div class="search-input col-80">
-                <label class="icon icon-search" for="search"></label>
-                <input type="search" id='search' placeholder='输入关键字...'/>
-              </div>
-              <a class="button button-fill button-primary col-20">搜索</a>
-            </div>
+  <h3>轻量的UI库</h3>
+  <p>SUI Mobile 非常轻量，核心库压缩Gzip后的JS、CSS网络传输体积<b>总共只有52K</b>，却提供了20+个常用的组件。</p>
+  <p>对于只有HTML&CSS的组件，你只需要复制HTML代码既可以使用。他的大部分JS组件都是独立的 Zepto 插件，并且提供了 <a href="https://github.com/sdc-alibaba/SUI-Mobile/issues/143" target="_blank">Zepto/jQuery 风格的API</a>，你将会非常熟悉这种方式。</p>
 
-            <div class="searchbar row">
-              <div class="search-input col-85">
-                <input type="search" id='search' placeholder='输入关键字...'/>
-              </div>
-              <a class="button button-fill button-primary col-15"><span class="icon icon-search"></span></a>
-            </div>
-            <div class="content-block">
-              <p><a href="#page1" class="button button-fill" d>打开左侧栏</a></p>
-            </div>
-
-          </div>
-        </div>
-        <div class="page" id="page1">
-        <header class="bar bar-nav">
-          <a class="button button-link button-nav pull-left back" href="/docs-demos/router">
-      <span class="icon icon-left"></span>
-      返回
-    </a>
-          <h1 class='title'>表单</h1>
-        </header>
-        <div class="content">
-          <div class="list-block">
-            <ul>
-              <!-- Text inputs -->
-              <li>
-                <div class="item-content">
-                  <div class="item-media"><i class="icon icon-form-name"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title label">姓名</div>
-                    <div class="item-input">
-                      <input type="text" placeholder="Your name">
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="item-content">
-                  <div class="item-media"><i class="icon icon-form-email"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title label">邮箱</div>
-                    <div class="item-input">
-                      <input type="email" placeholder="E-mail">
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="item-content">
-                  <div class="item-media"><i class="icon icon-form-password"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title label">密码</div>
-                    <div class="item-input">
-                      <input type="password" placeholder="Password" class="">
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="item-content">
-                  <div class="item-media"><i class="icon icon-form-gender"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title label">性别</div>
-                    <div class="item-input">
-                      <select>
-                        <option>Male</option>
-                        <option>Female</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <!-- Date -->
-              <li>
-                <div class="item-content">
-                  <div class="item-media"><i class="icon icon-form-calendar"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title label">生日</div>
-                    <div class="item-input">
-                      <input type="date" placeholder="Birth day" value="2014-04-30">
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <!-- Switch (Checkbox) -->
-              <li>
-                <div class="item-content">
-                  <div class="item-media"><i class="icon icon-form-toggle"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title label">开关</div>
-                    <div class="item-input">
-                      <label class="label-switch">
-                        <input type="checkbox">
-                        <div class="checkbox"></div>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="align-top">
-                <div class="item-content">
-                  <div class="item-media"><i class="icon icon-form-comment"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title label">文本域</div>
-                    <div class="item-input">
-                      <textarea></textarea>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="content-block">
-            <div class="row">
-              <div class="col-50"><a href="#" class="button button-big button-fill button-danger">取消</a></div>
-              <div class="col-50"><a href="#" class="button button-big button-fill button-success">提交</a></div>
-            </div>
-          </div>
-        </div>
-        <div class="panel-overlay"></div>
-        <!-- Left Panel with Reveal effect -->
-        <div class="panel panel-left panel-reveal theme-dark">
-          <div class="content-block">
-            <p>这是一个侧栏</p>
-            <p>你可以在这里放用户设置页面</p>
-            <p><a href="#" class="close-panel">关闭</a></p>
-          </div>
-          <div class="list-block">
-            <!-- .... -->
-          </div>
-        </div>
-        <div class="panel panel-right panel-reveal"  id='panel-left-demo'>
-          <div class="content-block">
-            <p>这是一个侧栏</p>
-            <!-- Click on link with "close-panel" class will close panel -->
-            <p><a href="#" class="close-panel">关闭</a></p>
-          </div>
-        </div></div>
+  <div class="section clearfix">
+    <div class="round">
+      <img src="http://gtms01.alicdn.com/tps/i1/TB1IFKdIFXXXXcmaXXXLIffVVXX-640-1136.png" alt="">
     </div>
+    <h3>炫酷的iOS风格</h3>
+    <p>我们的组件都是按照iOS风格设计的，所有有很多组件都是iOS独有的炫酷设计。</p>
+  </div>
 
-    <script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.js' charset='utf-8'></script>
-       <script>
-     //打开自动初始化页面的功能
-     //建议不要打开自动初始化，而是自己调用 $.init 方法完成初始化
-     $.config = {
-       swipePanel: "left"
-     }
-   </script>
-    <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.js' charset='utf-8'></script>
-    <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.js' charset='utf-8'></script>
-    <script>$.init();console.log($.device);</script>
-
-  </body>
-</html>
+  <div class="section clearfix">
+    <h3>功能强大的组件</h3>
+    <p>我们实现了下拉刷新、日历、省市区选择器等功能非常强大的组件，并且他们在安卓上也是同样好的体验。</p>
+    <p>如果你还在为如何实现下拉刷新纠结，还在调试安卓日历输入框的bug，还在自己写收货地址选择，不如赶紧用SUI吧。</p>
+    <div class="components-img">
+      <img width='320' src="/img/docs-ptr-demo.gif" alt="">
+      <img width='320' src="http://gtms02.alicdn.com/tps/i2/TB119uAIFXXXXcoaXXXehlzYXXX-388-690.gif" alt="">
+      <img width='320' src="http://gtms03.alicdn.com/tps/i3/TB18A.DIFXXXXbmapXXehlzYXXX-388-690.gif" alt="">
+    </div>
+  </div>
+</div>
+{% include footer.html %}
